@@ -4,8 +4,9 @@ import './App.css';
 import {BrowserRouter as Router} from 'react-router-dom';
 import { GlobalStyle } from './globalStyles';
 import Hero from './components/Home';
-import { productData } from './components/Products/data';
+import { productData,productDataTwo } from './components/Products/data';
 import Products from './components/Products';
+import Feature from './components/Feature';
 function App() {
   return (
     <>
@@ -13,7 +14,8 @@ function App() {
       <GlobalStyle/>
       <Hero/>
       <Products heading='Choose your Favourite' data={productData}/>
-      
+      <Feature/>
+      <Products heading='Sweet Treats for you' data={productDataTwo}/>
       </Router>
  
     
